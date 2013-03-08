@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="FZEFZE" version="3.0">
+  <display-name>GestionFormationWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<description>Servlet de description des cours</description>
+  	<display-name>Liste Formation Objis</display-name>
+  	<servlet-name>ListeFormationsObjis</servlet-name>
+  	<servlet-class>com.objis.demos.servlet.ListeFormationsObjis</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ListeFormationsObjis</servlet-name>
+  	<url-pattern>/ListeFormationObjis</url-pattern>
+  </servlet-mapping>
+</web-app>
